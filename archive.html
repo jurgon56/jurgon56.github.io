@@ -1,0 +1,145 @@
+<div id="1-04-2023" class="log project-update">
+    <div class="log-header">
+      <span class="date">1-04-2023</span>
+      <span class="title"> Sentry #1: Progression <br></span> 
+    </div>
+    <p>
+      Sentry Project is coming along slowly - this is because of a bit of laziness and a general lack of time; HOWEVER...<br> <br>
+
+      I have managed to investigate the USB port charger for the water-bullet gun and update schematic with circuitry for the shooting system.
+    </p>
+    <img class="in-text-img" src="./media/elog-media/ACE-LIFE-usb-batt.jpg">
+    <p>
+      I could not find any datasheet for the main IC on the PCB board based on the IC's part number on the internet...  <br> <br>
+      Nevertheless, I have managed to gain an understanding that this circuit is doing two things:
+
+      <ul>
+        <li>boosting the voltage from 5V to 7.4 to charge the lithium battery pack (boost converter),,</li>
+        <li>and manages the battery's charge (BMS), as there is one extra wire connected to the battery pack</li>
+      </ul> 
+    </p>
+    <img class="in-text-img" src="./media/elog-media/ACE-LIFE-sch.png">
+  </div>
+
+<div id="02-09-2023" class="log project-update">
+    <div class="log-header">
+      <span class="date">02-09-2023</span>
+      <span class="title"> Sentry #6: X direction improved and further works <br></span> 
+    </div>
+    <p>
+      Hello again,
+      once again I was silent for a long time - I went on vacation to Bulgaria during august so not much has happend that month. <br><br>
+
+      I have managed to come up with a better design for X-axis - it is not longer wobbly! See the video below:<br>
+
+    </p>
+
+    <iframe class="in-text-vid" width="560" height="315" src="https://www.youtube.com/embed/PWD_DFDGaeQ?si=b5HCcyc_gChj859k" 
+    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+    <p>
+      The design is much better as now it has supports on the sides. I have used bearings as I thought they will be needed - common sense. <br><br> 
+      Otherwise plastic against plastic won't be moving nicely.
+      <br><br>
+      Furthermore, I am once again doing the 3D modeling... I hope I will be done soon as I am quite tired of 3D modelling now.
+      <br> Plan is that I have to only now make the cover for the top and place holder for the bullets. Then I will be concentraing on Hardware and Software integration.
+      <br> Small peak at the work I am doing now:
+    </p>
+    <img class="in-text-img" src="media\elog-media\SnetryUpdatePhoto.png">
+
+    <p>
+      See you later!
+    </p>
+    
+  </div>
+
+<div id="23-07-2023" class="log project-update">
+    <div class="log-header">
+      <span class="date">23-07-2023</span>
+      <span class="title"> Sentry #5: XY direction and initial wiring <br></span> 
+    </div>
+    <p>
+      To sum up things, I have progress Sentry project to the point where I can some coding... to find 
+      max,min and other values. <br><br>
+      Here are some materials that you may find intresting: <br>
+    </p>
+    <img class="in-text-img" src="media/elog-media/State_Machine-High-Level State Machine.drawio.png">
+    <p>Initial basic state machine (I currently reading a good book about state automata - therefore it may change!)</p>
+    
+    <iframe class="in-text-vid" width="560" height="315" src="https://www.youtube.com/embed/V8xpqyTdmoM" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+
+    <p>Spinning X axis :-) </p>
+    <img class="in-text-img" src="media/elog-media/IMG_20230723_210713.jpg">
+    <p>Initial wiring of Buck convertes with battery, switch - I have modifed battery charger so it has a easy charging port.<br>
+       (Originally it had crocodile clips...)
+    </p>
+  </div>
+
+
+<div id="02-07-2023" class="log project-update">
+    <div class="log-header">
+      <span class="date">02-07-2023</span>
+      <span class="title"> Sentry #4: Gears and their setback.. <br></span> 
+    </div>
+    <p>
+        As I have realised that the design i had in mind would absolutly tangle the wires even with using the slip ring..<br>
+        I have lost hope.... <br><br>
+
+        However, I have came up with an idea to use gears! This will allow for no wire tangling and the 120 degree servo can be use! <br>
+        As iwth the right Gear Ration, servo can be transformed into 360 mmovement at the cost of a resolution.
+        <br><br>
+        No much progress as I have to learn about gears, design them and model them... 
+        <br><br>
+        
+        Till next time!
+    </p>
+    <img class="in-text-img" src="media/elog-media/2023-07-02-163210.png">
+  </div>
+
+  <div id="20-06-2023" class="log project-update">
+    <div class="log-header">
+      <span class="date">20-06-2023</span>
+      <span class="title"> Sentry #3: Progression  <br></span> 
+    </div>
+    <p>Right, so ... Its clear I am not consistent. <br>
+       I have been doing quite a lot lately about the project; mainly 3D modelling, planning and ordering missing/extra parts. <br><br>
+
+       I have managed to 3D model legs, battery container and motherboard.
+
+       <img class="in-text-img" src="./media/elog-media/25062023 _2_.jpg">
+    </p>
+  </div>
+
+  <div id="10-06-2023" class="log project-update">
+    <div class="log-header">
+      <span class="date">10-06-2023</span>
+      <span class="title"> Sentry #2: Progression  <br></span> 
+    </div>
+    <p>
+      Well its been a while... went for vacation to Cornwall wish was in May and I have been concentraing on my full-time job and trianing... <br><br>
+
+      What little I did to the project:
+      <ul>
+        <li>Due to my laziness and the deadline for comicon, I will reduce the functionality (expectations) of the Sentry Project - it can always be better!</li>
+        <li>Bought more tools and components for the project e.g. bolts and nuts, crimp tool with crimps, soldering PCB and connector etc.</li>
+        <li>have done initial testing of the servo motors and relay modules - It looked fine!</li>
+        <li>Decided on the battey - it is a lead acid battery 12V 4.5ah - Yes it will be heavier but its less complicated to manage.</li>
+        <li>Waiting for the Slip ring for the cables to arrive... should come soon from far East...</li>
+        <li>Switch to modeling in SketchUp - its just much simpler adn quicker learn. <br> I have made my own component library so they can be reused</li>
+
+
+      </ul> 
+      <img class="in-text-img" src="./media/elog-media/Sentry_Progression_2_1.png">
+    </p>
+    
+    <p>
+      I will try to be more frequent with updates and just be less lazy!!!
+      .... Although I'm going to watch Spidervers tomorrow :D
+    </p>
+  </div>
+
+  

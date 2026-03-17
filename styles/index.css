@@ -1,0 +1,223 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Heebo', sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+body{
+  background-image: linear-gradient(to right top , #4493e9, #3179d4, #2060bf, #1248a8, #062f91, #062f91, #062f91, #062f91, #1248a8, #2060bf, #3179d4, #4493e9) , url(../media/EngPics/EngBack.png);
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size:cover;
+
+  /*for jquery - no horizontal bar*/
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; 
+}
+
+.page{
+  width: 80%;
+  max-width: 800px;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  background-color: #020814d2;
+  border-radius: 5%;
+  padding: 1rem;
+}
+
+
+.profile-picture{
+  display: block;
+  border-radius: 40%;
+  border: 1px solid black;
+  box-shadow: 1px 1px 25px black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-box{
+  display: block;
+}
+
+.about-name{
+  margin-top: 1.5rem;
+  font-family: 'Lobster Two', cursive;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  font-size: 3rem;
+}
+
+.about-text{
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+  text-align:center;
+}
+
+h3.about-text{
+  margin-top: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+li{
+  margin: 10px 0px;
+  letter-spacing: 1px;
+}
+
+.button-a{
+  text-decoration: none;
+}
+
+.buttons-section{
+  margin-top: 3rem;
+}
+.button-container{
+  margin-bottom: 3rem;
+}
+
+#option-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  width: 250px;
+  box-shadow: 1px 1px 25px rgb(0, 0, 0);
+  border-style: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;    
+  font-family: 'Bebas Neue', cursive;
+  font-size: 26px;
+  color: aliceblue;
+  letter-spacing: 3px;
+  text-decoration: none;
+  
+  transition: opacity 0.50s, transform 0.5s, 1s ease background-size;
+
+}
+
+.button-descrption{
+  margin-top: 1rem;
+  text-align: center;
+
+  font-weight: 400;
+  text-transform: capitalize;
+  
+}
+
+#option-button:hover{
+  opacity: 0.9;
+  transform: scale(1.1);
+  background-size: 115%;
+}
+
+#option-button:active{
+  opacity: 0.9;
+  transform: scale(0.8);
+  background-size: 100%;
+}
+
+.cv{
+  background-image: url(/media/CV_resized.jpg), linear-gradient(to right bottom,black, grey) ;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.elog{
+  background-image: url(/media/elog_gimp_projxcf.png), linear-gradient(to left bottom,black, grey);
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+/*animation for buttons.. Only for devices with height of less than 800px*/
+/**************************************/
+.fade-in {
+  opacity: 0;
+  transition: opacity 650ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+/*************************************/
+
+@media only screen and (min-width: 810px) {
+  .buttons-section{
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .about-name{
+    letter-spacing: 1px;
+  }
+
+  .buttons-section{
+    margin-top: 4rem;
+  }  
+}
+
+@media only screen and (min-width: 1000px) {
+  .page{
+    max-width: 1000px;
+  }
+
+  .profile-Info-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+  .profile-picture{
+    display: inline;
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 40%;
+    border: 1px solid black;
+    box-shadow: 1px 1px 25px black;
+  }
+
+  .about-box{
+    display: block;
+    margin-left: 15%;
+  }
+
+  .about-name{
+    margin-top: 1.5rem;
+    font-family: 'Lobster Two', cursive;
+    font-size: 2.8rem;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+  .about-text{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    text-align:center;
+  }
+
+  .buttons-section{
+    margin-top: 5rem;
+  }
+}

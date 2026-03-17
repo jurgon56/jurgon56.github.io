@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X_UA_Compatible" content="IE=dege">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="styles/elog.css">
+
+  <title>George's E-log</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Heebo:wght@200;300;400&family=Lobster+Two&display=swap" rel="stylesheet">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</head>
+
+<body>
+  <div class="board">
+    <div class="top">
+      <h1>Project and Qualification logs</h1>
+      <p> George's personal projects and any further qualifications.<br><br>
+          The "logs" consisit of short summary, picture or video and/or report. 
+      </p>
+      <div id="top-search-bars" data-search-category>
+        <select name="tag" id="tag">
+          <option value="">Filter by...</option>
+          <option value="project">Project</option>
+          <option value="qualification">Qualification</option>
+        </select>
+        <input type="search" id="keyword" name="keyword" placeholder="Type a keyword..." data-search-keyword>
+      </div>
+    </div>
+
+    <class="logs-section">
+      <div id="09-09-2023" class="log project">
+        <div class="log-header">
+          <span class="date">09-09-2023</span>
+          <span class="title"> Throwback: Tactile Rubik's Cube <br></span> 
+        </div>
+        <p>
+          It's been more than a year now since I have completed my final year project for my BEng. <br><br>
+          I would like to share here my video that I have produced for the presentation of the project to examiners <br><br>
+          Please, enjoy the video and try not to cringe xD. 
+        </p>
+        
+        <iframe class="in-text-vid" width="560" height="315" src="https://www.youtube.com/embed/l5WBq5R_WVc?si=cRg_SMHnB-J3oKHm" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+
+        <p>
+          As you saw... I was pretty stressed during this - well my degree dependent on it! <br><br>
+          I am hoping that if I would be doing it now, I would not be stuttering as much.
+          <br><br>
+          See you later!
+        </p>
+      </div>
+
+      <div id="25-06-2023" class="log project">
+        <div class="log-header">
+          <span class="date">25-06-2023</span>
+          <span class="title"> Work station upgrades <br></span> 
+        </div>
+        <p>
+        I have been improving my DIY work space incrementally and continuously. <br><br> 
+        Apart from general cleaning and orginising I have improved my work station with:
+        <ul>
+          <li>Oscilloscope (First ever self-owned!),</li>
+          <li>Small monitor - got it from charity shop for £10 - bargain!</li>
+          <li>Pegboards and LEDs lighting</li>
+        </ul>
+        
+        <img class="in-text-img" src="./media/elog-media/25062023 _3_.jpg">
+        <img class="in-text-img" src="./media/elog-media/25062023 _1_.jpg">
+        
+        Where the pegboards and LEDs have been installed today. furthermore, Those LED lights have been soldered and connected
+        to the 12V adaptor by me :-).<br><br>
+
+        Lastly, you may see a strange pistol like thing in the top-left corner of the pegboards.<br> This is a Bosch cordless screwdriver that I 
+        have managed to aquire today for >50% discont! Very luck I was! <br><br>
+
+        Till next time!
+        </p>
+      </div>
+      
+      <div id="1-04-2023" class="log project-finished">
+        <div class="log-header">
+          <span class="date">1-04-2023</span>
+          <span class="title"> First 3D model! <br></span> 
+        </div>
+        <p>
+          While working on the Sentry Gun project, I started learning 3D modelling... So I have decided to pick up FreeCAD - free & open source. <br>
+          I love these 3 words. <br><br>
+          So while learning it, I decided to make my own official 3D part and print it.<br>
+          The part that I have 3D modelled and printed is a holder clip for XP-PEN graphic pencil!<br><br>
+          It turned out great -  I posted it as my first Thingiverse Thing! <br><br>
+          Go and check it out <a href="https://www.thingiverse.com/thing:5944603">here</a>
+        </p>
+        <img class="in-text-img" src="./media/elog-media/holder_clip_model.png">
+      </div>
+      
+      <div id="05-02-2023" class="log project-finished">
+        <div class="log-header">
+          <span class="date">05-02-2023</span>
+          <span class="title"> Hello world! First log!<br> </span> 
+        </div>
+        <p>
+          This is my first ever log!<br>
+        I have completed the Websites fundamentals; all written in plain HTML,CSS and jQuery <br>
+        Below, you can see an image and video. One shows the oscilloscope reading from the DCDC buck converter PWM signal...
+        </p>
+        <img class="in-text-img" src="media/elog-media/WhatsApp Image 2023-01-15 at 23.08.42.jpeg">
+        <p>... and the other is the early beginning of one of my university group projects</p>
+        <iframe class="in-text-vid" src="https://youtube.com/embed/tvmqXXDi1sg"></iframe>
+        <p>I got plans to make a custom log entry system, so I won't have to write HTML code all the time, and I think it would be cool to make some back end and admin stuff :D.</p>
+      </div>
+    </div>
+    <div class="bottom">
+      Archive <br>
+      <a href="/elog.html">2023</a>
+    </div>
+  </div>
+
+
+  <script src="scripts/elog.js"></script>
+  <script src="scripts/elog-animation.js"></script>
+</body>
